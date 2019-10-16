@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <!-- 名称，要全局唯一 -->
+    <key>Label</key>
+    <string>com.arxiv.timer</string>
+
+    <!-- 脚本任务 -->    
+    <key>ProgramArguments</key>
+    <array>
+        <string>/python3.6</string>
+        <string>/ArxivPaper/run.py</string>
+    </array>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <!-- 运行时间 -->
+    <!-- 在每天10点自动执行 -->
+    <key>StartCalendarInterval</key>
+    <dict>
+      <key>Minute</key>
+      <integer>0</integer>
+      <key>Hour</key>
+      <integer>10</integer>
+    </dict>
+
+    <!-- 标准错误输出文件 -->
+    <key>StandardErrorPath</key>
+    <string>/ArxivPaper/error.txt</string>
+  </dict>
+</plist>
