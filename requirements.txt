@@ -1,5 +1,5 @@
 xlrd==1.1.0
 xlutils==2.0.0
-requests==2.22.0
+requests==2.31.0
 xlwt==1.2.0
 beautifulsoup4==4.8.1
